@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--ukryte na chwile
+<div class="main-backdrop is-hidden" data-modal>
+    -->
+
+    <div class="main__overlay">
+        <div class="top">
+      <p class="text"><span class="order">Order</span><span class="white-order"> now!</span></p>
+    </div>
+    
+      <p class="choose">Choose</p>
+      <div class="form-container">
+      <form >
+        <p class="kot">Product:</p>
+        <label>
+          <input type="radio" name="product" value="iceCream" checked />
+          ice cream
+        </label>
+        <label>
+          <input type="radio" name="product" value="iceCoffee" />
+          ice coffee
+        </label>
+        <label>
+          <input type="radio" name="product" value="milkshake" />
+          milkshake
+        </label>
+         <p class="kot">Amount:</p>
+        <label>
+          <input type="number" name="amount" min="1" max="10" step="1" value="1" />
+        </label>
+        <label>
+          Size:
+          <input
+            type="range"
+            name="size"
+            value="200"
+            min="200"
+            max="1000"
+            step="200"
+          />
+        </label>
+        <p class="kot">Selected size (ml): <span class="js-selected-value">200</span></p> 
+      </form>
+  <form>
+    <p class="kot">Flavour:</p>
+    <label>
+      <input type="checkbox" name="flavour" value="pistachio" />
+      pistachio
+    </label>
+    <label>
+      <input type="checkbox" name="flavour" value="matcha" />
+      matcha
+    </label>
+    <label>
+      <input type="checkbox" name="flavour" value="mintChocolateChip" />
+      mint chocolate chip
+    </label>
+    <label>
+      <input type="checkbox" name="flavour" value="coconut" />
+      coconut
+    </label>
+    <label>
+      <input type="checkbox" name="flavour" value="lemonCheesecake" />
+      lemon cheesecake
+    </label>
+    <label>
+      <input type="checkbox" name="flavour" value="banana" />
+      banana
+    </label>
+    <label>
+      <input type="checkbox" name="flavour" value="cherry"/>
+      cherry
+    </label>
+    <label>
+      <input type="checkbox" name="flavour" value="mocha" />
+      mocha
+    </label>
+    <label>
+      <input type="checkbox" name="flavour" value="cinnamon" />
+      cinnamon
+    </label>
+  </form>
+      <form>
+        <label>
+          <p>Name</p>
+          <div>
+            <input type="text" name="username" placeholder="Name" />
+          </div>
+        </label>
+        <label>
+          <p>Surname</p>
+          <div>
+            <input type="text" name="usersurname"  placeholder="Surname" />
+          </div>
+        </label>
+        <label >
+          <p >Phone number</p>
+          <div >
+            <input type="tel" name="phoneNumber"  placeholder="+48 111 111 111"  />
+          </div>
+        </label>
+        <label>
+          <p>E-mail</p>
+            <input
+              type="email"
+              name="emailAddress"
+              placeholder="placeholder@gmail.com" 
+            />
+        </label>
+        <button type="submit">TO DELIVERY DETAILS</button>
+        <button type="button"  data-modal-close>
+          <svg class="icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+   <!--</div>--> 
+  <script src="./js/modal.js"></script>
+</body>
+</html>
