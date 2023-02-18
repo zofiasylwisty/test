@@ -30,8 +30,9 @@
       <p class="choose">Choose</p>
       <div class="form-container">
       <form >
-        <div class="first-label">
         <p class="kot">Product:</p>
+        <div class="first-label">
+       
         <label class="item">
           <input type="radio" name="product" value="iceCream" checked />
           ice cream
@@ -48,26 +49,24 @@
       <div class="second-label">
          <p class="kot">Amount:</p>
         <label>
-          <input type="number" name="amount" min="1" max="10" step="1" value="1" />
+          <input class="input-position" type="number" name="amount" min="1" max="10" step="1" value="1" />
         </label>
       </div>
       <div class="third-label">
       <p class="kot"> Size:</p>
         <label>
           <input
+          class="input-position" 
             type="range"
             name="size"
             value="200"
             min="200"
             max="1000"
             step="200"
-            class="range"
           />
         </label>
       </div>
-      <div class="fourth-label">
         <p class="kot">Selected size (ml): <span class="js-selected-value">200</span></p> 
-      </div>
       </form>
   <form>
     
@@ -111,7 +110,8 @@
     </label></li>
   </ul>
   </form>
-  <form>
+</div>
+  <form class="form-position">
     <label>
       <p class="form-label">Name</p>
       <div>
@@ -144,7 +144,7 @@
     <button type="submit" class="delivery-button">TO DELIVERY DETAILS</button>
   </div>
   </form>
-    </div>
+    
   </div>
 
    <!--</div>--> 
