@@ -24,6 +24,7 @@
       <p class="choose">Choose</p>
       <div class="form-container">
       <form >
+        <div class="first-label">
         <p class="kot">Product:</p>
         <label>
           <input type="radio" name="product" value="iceCream" checked />
@@ -37,12 +38,16 @@
           <input type="radio" name="product" value="milkshake" />
           milkshake
         </label>
+      </div>
+      <div class="second-label">
          <p class="kot">Amount:</p>
         <label>
           <input type="number" name="amount" min="1" max="10" step="1" value="1" />
         </label>
+      </div>
+      <div class="third-label">
+      <p class="kot"> Size:</p>
         <label>
-          Size:
           <input
             type="range"
             name="size"
@@ -52,46 +57,52 @@
             step="200"
           />
         </label>
+      </div>
+      <div class="fourth-label">
         <p class="kot">Selected size (ml): <span class="js-selected-value">200</span></p> 
+      </div>
       </form>
   <form>
+    
     <p class="kot">Flavour:</p>
-    <label>
+    <ul class="fifth-label">
+   <li class="fifth-label-item"> <label>
       <input type="checkbox" name="flavour" value="pistachio" />
       pistachio
-    </label>
-    <label>
+    </label></li>
+    <li class="fifth-label-item"> <label>
       <input type="checkbox" name="flavour" value="matcha" />
       matcha
-    </label>
-    <label>
+    </label></li>
+    <li class="fifth-label-item"><label>
       <input type="checkbox" name="flavour" value="mintChocolateChip" />
-      mint chocolate chip
-    </label>
-    <label>
+      mint 
+    </label></li>
+    <li class="fifth-label-item">  <label>
       <input type="checkbox" name="flavour" value="coconut" />
       coconut
-    </label>
-    <label>
+    </label></li>
+    <li class="fifth-label-item"> <label>
       <input type="checkbox" name="flavour" value="lemonCheesecake" />
-      lemon cheesecake
-    </label>
-    <label>
+      lemon 
+    </label></li>
+    <li class="fifth-label-item">  <label>
       <input type="checkbox" name="flavour" value="banana" />
       banana
-    </label>
-    <label>
+    </label></li>
+    <li class="fifth-label-item">  <label>
       <input type="checkbox" name="flavour" value="cherry"/>
       cherry
-    </label>
-    <label>
+    </label></li>
+    <li class="fifth-label-item">  <label>
       <input type="checkbox" name="flavour" value="mocha" />
       mocha
-    </label>
-    <label>
+    </label></li>
+    <li class="fifth-label-item">  <label>
       <input type="checkbox" name="flavour" value="cinnamon" />
       cinnamon
-    </label>
+    </label></li>
+  </ul>
   </form>
       <form>
         <label>

@@ -67,10 +67,42 @@ margin-top: 30px;
 }
 .kot {
     border: 1px solid green;
+    font-size: 15px;
     display: inline-block;
 }
 .form-container {
+border: 2px solid green;
+margin-left: 25px;
+}
+.first-label {
+  border: 1px solid red;
+font-size: 13px;
 
+}
+.second-label {
+  border: 1px solid red;
+}
+.third-label {
+  border: 1px solid red;
+}
+.fourth-label {
+  border: 1px solid red;
+}
+.fifth-label {
+  padding: 0px;
+  margin: auto;
+  border: 1px solid red;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  max-width: 370px;
+}
+.fifth-label-item {
+  width: 87.5px;
+  border: 1px solid green;
+  flex-basis: calc((100%-2*5)/3);
 }
 @media (min-width: 480px) {
 
