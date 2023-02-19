@@ -22,8 +22,7 @@ body {
   pointer-events: none;
   opacity: 0;
 }
-
-.main__overlay {
+.modal {
 border: 1px solid  #FFB8CA;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -38,13 +37,7 @@ transition-property: visibility opacity ;
 transition-duration: 2s;
 overflow-x: hidden;
 }
-.order {
-    color: #D41443;
-}
-.white-order {
-    color: white;
-}
-.top {
+.modal__heading {
   background-color: #FFB8CA;
   display: flex;
   justify-content: space-between;
@@ -54,11 +47,29 @@ overflow-x: hidden;
   line-height: 44px;
   letter-spacing: 0.04em;
 }
-.text {
+.modal__text {
     padding: 20px 0px;
     margin: 0px;
     margin-left: 30px;
 }
+.modal__order{
+  color: #D41443;
+}
+.modal__order-white{
+  color: white;
+}
+.modal__close {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #D41443;
+  opacity: 0.7;
+  margin-top: 5px;
+  fill: rgb(82, 8, 8);
+  background-color: white;
+  cursor: pointer;
+  }
 .choose {
   margin-left: 15px;
     font-family: "Titan One";
@@ -70,8 +81,10 @@ overflow-x: hidden;
     margin-top: 15px;
     margin-bottom: 0px;
 }
-.kot {
-
+.form {
+  margin-left: 25px;
+  }
+.form__element{
     font-size: 14px;
     font-family: "DM Sans";
     font-weight: 700;
@@ -79,7 +92,37 @@ overflow-x: hidden;
     color: #20191b9d;
     display: inline-block;
 }
-
+.form__label-first {
+  font-size: 13px;
+  }
+  .form__label-second {
+  margin-top: 10px;
+  }
+  .form__label-third {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .form__list{
+    padding: 0px;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    max-width: 370px;
+    margin-bottom: 30px;
+  }
+  .form__item {
+    font-size: 13px;
+    font-family: "DM Sans";
+    letter-spacing: 0.03em;
+    color: #20191bab;
+  }
+  .form__input-position {
+    margin-left: 15px;
+  }
 input[type=range] {
  width: 200px;
 }
@@ -104,56 +147,23 @@ input[type=range]::-moz-range-thumb {
   background: #ffffff;
   cursor: pointer;
 }
-.item {
-  font-size: 13px;
-  font-family: "DM Sans";
-  letter-spacing: 0.03em;
-  color: #20191bab;
-}
-.form-container {
-
-margin-left: 25px;
-}
-.first-label {
-font-size: 13px;
-}
-.second-label {
-margin-top: 10px;
-}
-.third-label {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.fifth-label {
-  padding: 0px;
-  margin: auto;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  justify-content: center;
-  max-width: 370px;
-
-  margin-bottom: 30px;
-}
-.fifth-label-item {
+.form__grid {
   width: 87.5px;
- 
   flex-basis: calc((100%-2*5)/3);
 }
-.input-position {
-  margin-left: 15px;
+.data {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
-.form-label {
+.data__label{
   font-family: "Titan One";
   color: #41315e96;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.02em;
 }
-.filling {
+.data__container {
   font-family: "DM Sans";
   height: 40px;
   width: 280px;
@@ -163,11 +173,6 @@ margin-top: 10px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-position {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
 }
 .pink:hover,
 .pink:focus,
@@ -193,13 +198,13 @@ margin-top: 10px;
   border-color: rgba(75, 172, 202, 0.753);
   outline: none;
 }
-.button-position {
+.button {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.delivery-button {
+.button__delivery {
   font-family: "Titan One";
   letter-spacing: 0.04em;
   border-radius: 5%;
@@ -209,18 +214,6 @@ margin-top: 10px;
   box-shadow: 0px 1px 1px #D41443,
     0px 1px 7px #b16477;
     color: white;
-}
-.close-button {
-margin-right: 5px;
-width: 30px;
-height: 30px;
-border-radius: 50%;
-border: 2px solid #D41443;
-opacity: 0.7;
-margin-top: 5px;
-fill: rgb(82, 8, 8);
-background-color: white;
-cursor: pointer;
 }
 .open-button {
   cursor: pointer;
@@ -236,9 +229,7 @@ cursor: pointer;
   .filling {
     width: 380px;
   }
-
 }
-
 @media (min-width: 1200px) {
 .main__overlay {
   margin-top: 100px;
