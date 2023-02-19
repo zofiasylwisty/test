@@ -22,9 +22,7 @@ body {
   pointer-events: none;
   opacity: 0;
 }
-.is-hidden .main__overlay {
-  transform: translate(-50%, -50%) scale(1.2);
-}
+
 .main__overlay {
 border: 1px solid  #FFB8CA;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -38,7 +36,7 @@ background: white;
 visibility: visible;
 transition-property: visibility opacity ;
 transition-duration: 2s;
-
+overflow-x: hidden;
 }
 .order {
     color: #D41443;
@@ -235,14 +233,14 @@ cursor: pointer;
   display: flex;
   justify-content: space-around;
   }
+  .filling {
+    width: 380px;
+  }
 
 }
-@media (min-width: 768px) {
 
-}
 @media (min-width: 1200px) {
-
+.main__overlay {
+  margin-top: 100px;
 }
-@media (min-width: 1600px) {
-
 }
